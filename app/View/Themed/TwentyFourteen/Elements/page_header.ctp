@@ -6,7 +6,7 @@
 			<div class="row">					
 				<!--start: Logo -->
 				<div class="logo span3">						
-					<?php echo $this->Html->link($this->Html->image("logo.png"), array('controller'=>'home', 'action' => 'index'), array('escape' => false)); ?>
+					<?php echo $this->Html->link($this->Html->image("logo.png"), array('controller'=>'pages', 'action' => 'display', 'home'), array('escape' => false)); ?>
 				</div>
 				<!--end: Logo -->
 					

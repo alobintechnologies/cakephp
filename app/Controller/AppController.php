@@ -31,8 +31,22 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	/**
+	 * This is used for rendering the theme for public site
+	 * @since v1.0
+	 */
 	function beforeRender() {
 		$this->view = "Theme";
 		$this->theme = "TwentyFourteen";
+	}
+
+	/**
+	 * This is used for setting the user session exisits and admin layout setting
+	 * @since v1.0
+	 */
+	function beforeFilter() {
+		if(isset($this->params['admin']) && $this->params['admin']) {
+			$this->layout = "admin";
+		}
 	}
 }

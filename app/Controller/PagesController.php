@@ -74,4 +74,8 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+
+	public function admin_index() {
+		$this->render('admin/dashboard');
+	}
 }
