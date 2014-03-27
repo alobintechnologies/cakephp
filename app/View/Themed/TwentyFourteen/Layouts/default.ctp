@@ -1,15 +1,14 @@
 <?php echo $this->element('header'); ?>
 
 <?php echo $this->element('page_header'); ?>
-<?php echo $this->element('slider'); ?>
+<?php echo $this->element('top_banner'); ?>
 <!--start: Wrapper-->
 <div id="wrapper">				
-	<!--start: Container -->
+    <!--start: Container -->
     <div class="container">     	    
-		<?php echo $this->Session->flash(); ?>	
-		<?php echo $this->fetch('content'); ?>
-	</div>
-	<!--end: Container-->	
+	<?php echo $this->fetch('content'); ?>
+    </div>
+    <!--end: Container-->	
 </div>
 <!-- end: Wrapper  -->			
 

@@ -23,9 +23,17 @@
     background-color: #fff;
 }
 
+.panel-body table thead tr th a {
+	color: #333;
+}
+
 .page-header {
 	margin: 10px 0px;
 	font-size: 20px;
+}
+
+td.actions a {
+	color: #555;
 }
 
 @media(min-width:768px) {

@@ -31,12 +31,14 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	public $uploadDir = "uploads";
+	public $helpers = array('Wysiwyg.Nicedit');
 	/**
 	 * This is used for rendering the theme for public site
 	 * @since v1.0
 	 */
 	function beforeRender() {
-		$this->view = "Theme";
 		$this->theme = "TwentyFourteen";
 	}
 

@@ -6,7 +6,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>		
-                <a class="navbar-brand" href="index.html"><?php echo $this->Html->image('logo.png'); ?></a>
+                <a class="navbar-brand" href="index.html"><?php echo $this->Html->image('admin/logo.png'); ?></a>
             </div>
             <!-- /.navbar-header -->
 

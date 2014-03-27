@@ -2,10 +2,18 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+			<?php echo $this->Html->link('<i class="fa fa-dashboard fa-fw"></i> Dashboard', array('controller' => 'listings', 'action' => 'index',  'admin' => 'true'), array('escape' => false)); ?>                        
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-list fa-fw"></i> Listing</a>
+                        <a href="#"><i class="fa fa-list fa-fw"></i> Listing<span class="fa arrow"></span></a>
+			<ul class="nav nav-second-level">
+			    <li>
+                                <?php echo $this->Html->link('Listings', array('controller' => 'listings', 'action' => 'index',  'admin' => 'true')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link('Create Listing', array('controller' => 'listings', 'action' => 'add', 'admin' => 'true')); ?>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="tables.html"><i class="fa fa-users fa-fw"></i> Registered Users<span class="fa arrow"></span></a>
@@ -13,23 +21,14 @@
                             <li>
                                 <?php echo $this->Html->link('Users', array('controller'=>'users', 'action'=> 'index')); ?>
                             </li>
-                            <li>
-                                <a href="buttons.html">Customers</a>
+			    <li>
+                                <?php echo $this->Html->link('Customers', array('controller' => 'customers', 'action' => 'index',  'admin' => 'true')); ?>
                             </li>
-                            <li>
-                                <a href="notifications.html">Create Customer</a>
-                            </li>
-                            <li>
-                                <a href="typography.html">Typography</a>
-                            </li>
-                            <li>
-                                <a href="grid.html">Grid</a>
+			    <li>
+                                <?php echo $this->Html->link('Create Customer', array('controller' => 'customers', 'action' => 'add',  'admin' => 'true')); ?>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-link fa-fw"></i> Links</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-comments fa-fw"></i> Client Activity<span class="fa arrow"></span></a>
@@ -37,11 +36,11 @@
                             <li>
                                 <a href="panels-wells.html">Feedback</a>
                             </li>
-                            <li>
-                                <a href="buttons.html">Article Comments</a>
+			    <li>
+                                <?php echo $this->Html->link('Article Comments', array('controller' => 'comments', 'action' => 'index',  'admin' => 'true')); ?>
                             </li>
-                            <li>
-                                <a href="notifications.html">Classified Comments</a>
+			    <li>
+                                <?php echo $this->Html->link('Classified Comments', array('controller' => 'comments', 'action' => 'index',  'admin' => 'true')); ?>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -49,17 +48,11 @@
                     <li>
                         <a href="#"><i class="fa fa-envelope fa-fw"></i> E-News<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Special Newsletter</a>
+			    <li>
+                                <?php echo $this->Html->link('Articles', array('controller' => 'articles', 'action' => 'index',  'admin' => 'true')); ?>
                             </li>
                             <li>
-                                <a href="#">Weekly Newsletter</a>
-                            </li>
-                            <li>
-                                <a href="#">Articles</a>
-                            </li>
-                            <li>
-                                <a href="#">Create Article</a>
+                                <?php echo $this->Html->link('Create Article', array('controller' => 'articles', 'action' => 'add', 'admin' => 'true')); ?>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -67,11 +60,11 @@
                     <li>
                         <a href="#"><i class="fa fa-calendar fa-fw"></i> Calendar<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="blank.html">Calendars</a>
+			    <li>
+                                <?php echo $this->Html->link('Calendars', array('controller' => 'calendars', 'action' => 'index',  'admin' => 'true')); ?>
                             </li>
                             <li>
-                                <a href="login.html">Create Calendars</a>
+                                <?php echo $this->Html->link('Create Calendar', array('controller' => 'calendars', 'action' => 'add', 'admin' => 'true')); ?>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -80,13 +73,13 @@
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i> Website Management<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="blank.html">Categories</a>
+                                <a href="#">Categories</a>
                             </li>
                             <li>
-                                <a href="login.html">Banner</a>
+                                <a href="#">Banner</a>
                             </li>
                             <li>
-                                <a href="login.html">Slide Banner Homepage</a>
+                                <a href="#">Slide Banner Homepage</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -95,10 +88,10 @@
                         <a href="#"><i class="fa fa-film fa-fw"></i> Video<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="blank.html">Videos</a>
+                                <?php echo $this->Html->link('Videos', array('controller' => 'videos', 'action' => 'index',  'admin' => 'true')); ?>
                             </li>
                             <li>
-                                <a href="login.html">Create Video</a>
+                                <?php echo $this->Html->link('Create Video', array('controller' => 'videos', 'action' => 'add', 'admin' => 'true')); ?>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->

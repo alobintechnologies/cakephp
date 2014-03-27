@@ -32,10 +32,11 @@
 
     <!-- start: CSS -->
     <?php
-    echo $this->Html->css('bootstrap');
-    echo $this->Html->css('bootstrap-responsive');
+    echo $this->Html->css('bootstrap.min');
+    //echo $this->Html->css('bootstrap-responsive');	 
     echo $this->Html->css('style');
     ?>
+    <?php echo $this->Html->css('plugins/datepicker/datepicker3'); ?>
 	<!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->

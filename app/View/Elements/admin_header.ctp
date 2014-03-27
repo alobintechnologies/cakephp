@@ -9,7 +9,8 @@
 
     <!-- Core CSS - Include with every page -->
     <?php echo $this->Html->css('plugins/bootstrap/bootstrap.min'); ?>
-    <?php echo $this->Html->css('plugins/font-awesome/font-awesome.min'); ?>
+    <?php echo $this->Html->css('plugins/font-awesome/font-awesome.min'); ?> 
+    <?php echo $this->Html->css('plugins/datepicker/datepicker3'); ?>	 
 
     <!-- Page-Level Plugin CSS - Dashboard -->
     <?php echo $this->Html->css('plugins/morris/morris-0.4.3.min'); ?>

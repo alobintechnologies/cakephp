@@ -1,137 +1,111 @@
+	<div class="col-lg-8">
 
-<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-    <p>
-		This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-	</p>
-    <p><a class="btn btn-success btn-large">Learn more &raquo;</a></p>
-</div>
-<!-- end: Hero Unit -->
+                <!-- blog entry -->
+                <h1><a href="#">A Blog Home Template for Bootstrap 3</a>
+                </h1>
+                <p class="lead">by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <hr>
+                <p>
+                    <span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
+                <hr>
+                <img src="http://placehold.it/900x300" class="img-responsive">
+                <hr>
+                <p>This is a very basic starter template for a blog homepage. It makes use of Glyphicons that are built into Bootstrap 3, and it makes use of the Pager at the bottom of the page. Make sure you get the Glyphicons files by downloading the entire
+                    <code>/fonts</code>directory that you can download in the source files or at <a href="http://getbootstrap.com">getbootstrap.com</a>. That directory has all of the web fonts in it which makes Glyphicons work.</p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-<!-- start: Row -->
-<div class="row">
-	
-    <div class="span4">
-        <div class="icons-box">
-			<i class="ico-ok circle big"></i>
-			<div class="title"><h3>Easy to use</h3></div>
-			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-			</p>
-			<div class="clear"></div>
-		</div>
-    </div>
+                <hr>
 
-    <div class="span4">
-        <div class="icons-box">
-			<i class="ico-ipad circle big"></i>
-			<div class="title"><h3>Responsive</h3></div>
-			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-			</p>
-			<div class="clear"></div>
-		</div>
-    </div>
+                <!-- second blog entry -->
+                <h1><a href="#">Another Blog Post</a>
+                </h1>
+                <p class="lead">by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <hr>
+                <p>
+                    <span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+                <hr>
+                <img src="http://placehold.it/900x300" class="img-responsive">
+                <hr>
+                <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science...</p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-    <div class="span4">
-        <div class="icons-box">
-			<i class="ico-heart circle big"></i>
-			<div class="title"><h3>User friendly</h3></div>
-			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-			</p>
-			<div class="clear"></div>
-		</div>
-    </div>
+                <hr>
 
-</div>
-<!-- end: Row -->
-      		
-<hr>
-		
-<!-- start Clients List -->	
-<div class="clients-carousel">
-		
-	<ul class="slides clients">
-		<li><?php echo $this->Html->image("logos/1.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/2.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/3.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/4.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/5.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/6.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/7.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/8.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/9.png"); ?></li>
-		<li><?php echo $this->Html->image("logos/10.png"); ?></li>			
-	</ul>
-		
-</div>
-<!-- end Clients List -->
-		
-<hr>
-			
-<!-- start: Row -->
-<div class="row">
-				
-	<!-- start: Icon Boxes -->
-	<div class="icons-box-vert-container">
+                <!-- third blog entry -->
+                <h1><a href="#">Third Blog Post Entry</a>
+                </h1>
+                <p class="lead">by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <hr>
+                <p>
+                    <span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+                <hr>
+                <img src="http://placehold.it/900x300" class="img-responsive">
+                <hr>
+                <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science...</p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-		<!-- start: Icon Box Start -->
-		<div class="span6">
-			<div class="icons-box-vert">
-				<i class="ico-ok ico-color circle-color big"></i>
-				<div class="icons-box-vert-info">
-					<h3>Easy to use</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<!-- end: Icon Box-->
+                <hr>
 
-		<!-- start: Icon Box Start -->
-		<div class="span6">
-			<div class="icons-box-vert">
-				<i class="ico-cup  ico-white circle-color-full big-color"></i>
-				<div class="icons-box-vert-info">
-					<h3>Best choice</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<!-- end: Icon Box -->
+                <!-- pager -->
+                <ul class="pager">
+                    <li class="previous"><a href="#">&larr; Older</a>
+                    </li>
+                    <li class="next"><a href="#">Newer &rarr;</a>
+                    </li>
+                </ul>
 
-		<!-- start: Icon Box Start -->
-		<div class="span6">
-			<div class="icons-box-vert">
-				<i class="ico-ipad ico-color circle-color big"></i>
-				<div class="icons-box-vert-info">
-					<h3>Fully Responsive</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<!-- end: Icon Box -->
+            </div>
 
-		<!-- start: Icon Box Start -->
-		<div class="span6">
-			<div class="icons-box-vert">
-				<i class="ico-thumbs-up  ico-white circle-color-full big-color"></i>
-				<div class="icons-box-vert-info">
-					<h3>Social Network</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<!-- end: Icon Box -->
-
-	</div>
-	<!-- end: Icon Boxes -->
-	<div class="clear"></div>
-</div>
-<!-- end: Row -->
-			
-<hr>
+            <div class="col-lg-4">
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /well -->
+                <div class="well">
+                    <h4>Popular Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#dinosaurs">Dinosaurs</a>
+                                </li>
+                                <li><a href="#spaceships">Spaceships</a>
+                                </li>
+                                <li><a href="#fried-foods">Fried Foods</a>
+                                </li>
+                                <li><a href="#wild-animals">Wild Animals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#alien-abductions">Alien Abductions</a>
+                                </li>
+                                <li><a href="#business-casual">Business Casual</a>
+                                </li>
+                                <li><a href="#robots">Robots</a>
+                                </li>
+                                <li><a href="#fireworks">Fireworks</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /well -->
+                <div class="well">
+                    <h4>Side Widget Well</h4>
+                    <p>Bootstrap's default wells work great for side widgets! What is a widget anyways...?</p>
+                </div>
+                <!-- /well -->
+            </div>
