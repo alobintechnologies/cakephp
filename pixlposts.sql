@@ -1,6 +1,3 @@
-drop table users;
-drop table user_meta;
-drop table listings;
 /**
  * This table holds the users, customers datas
  */
