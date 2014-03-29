@@ -35,9 +35,10 @@
     echo $this->Html->css('bootstrap.min');
     //echo $this->Html->css('bootstrap-responsive');	 
     echo $this->Html->css('style');
+    echo $this->Html->css('plugins/datepicker/datepicker3');
+    echo $this->Html->css('plugins/skitter/skitter.styles');	
     ?>
-    <?php echo $this->Html->css('plugins/datepicker/datepicker3'); ?>
-	<!-- end: CSS -->
+    <!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

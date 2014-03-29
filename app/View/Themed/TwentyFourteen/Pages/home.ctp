@@ -7,84 +7,33 @@
 		</div>
 		<div class="info-sm-bar pxp-bg-color theme-wt-color">What our clients say</div>
 	</div>
-	<div class="col-md-8 ">
-		<div class="col-size theme-alt-color" > <?php echo $this->Html->image('hp.jpg') ?> </div>
+	<div class="col-md-8 "> 
+		<div class="border_box">
+			<div class="box_skitter box_skitter_large">
+				<ul>
+					<li><?php echo $this->Html->link($this->Html->image('hp.jpg'), array('class' => 'cube')); ?><div class="label_text"><p>cube</p></div></li>
+					<li><?php echo $this->Html->link($this->Html->image('hp.jpg'), array('class' => 'cube')); ?><div class="label_text"><p>cube</p></div></li>
+					<li><?php echo $this->Html->link($this->Html->image('hp.jpg'), array('class' => 'cube')); ?><div class="label_text"><p>cube</p></div></li>
+					<li><?php echo $this->Html->link($this->Html->image('hp.jpg'), array('class' => 'cube')); ?><div class="label_text"><p>cube</p></div></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="row">
 	<div class="col-md-4">
-			<h5 class="theme-color-bold">LATEST NEWS</h5>
-			<div class="list-group  ">
-			<a href="#" class="list-group-item  ">
-					<h4 class="list-group-item-heading"></h4>
-					<?php echo $this->Html->image('news.jpg') ?>
-					<p class="list-group-item-text theme-color-bold box-container "> 
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-					</p>
-			</a>
-			<a href="#" class="list-group-item">
-				 <p class="list-group-item-text theme-color-bold "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-			</a>
-			<a href="#" class="list-group-item">
-				 <p class="list-group-item-text theme-color-bold"> Lorem Ipsum is simply dummy text of the printing </p>
-			</a>
-			<a href="#" class="list-group-item">
-				 <p class="list-group-item-text theme-color-bold"> Lorem Ipsum is simply dummy text of the printing </p>
-			</a>
-			 <a href="#" class="list-group-item">
-				 <span class="search"> Click here for more new stories </span> 
-			 </a>
-			 <a href="#" class="list-group-item">
-				<?php echo $this->Html->image('news2.jpg') ?>
-				 
-			 </a>
-		</div>
+		<?php echo $this->element('Blocks/home_latest_news'); ?>		
+		<?php echo $this->element('Banners/home_left_banner'); ?>
 	</div>
 
 	<div class="col-md-4">
-		 <h5 class="  theme-color-bold">VIEW AND BUY EQUIPMENT</h5>
-		  <div class="list-group  ">
-			  <a href="#" class="list-group-item  ">
-				<h4 class="list-group-item-heading"></h4>
-				<?php echo $this->Html->image('news.jpg') ?>
-				<p class="list-group-item-text theme-color-bold box-container "> 
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-				</p>
-			  </a>
-
-			  <a href="#" class="list-group-item">
-				 <p class="list-group-item-text theme-color-bold "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-			  </a>
-			  <a href="#" class="list-group-item">
-				 <p class="list-group-item-text theme-color-bold"> Lorem Ipsum is simply dummy text of the printing </p>
-			  </a>
-			  <a href="#" class="list-group-item">
-				 <p class="list-group-item-text theme-color-bold"> Lorem Ipsum is simply dummy text of the printing </p>
-			  </a>
-			  <a href="#" class="list-group-item">
-					<span class="search"> Click here for more new stories </span> 
-			  </a>
-			  <a href="#" class="list-group-item">
-					<?php echo $this->Html->image('news2.jpg') ?>
-			 </a>
-		</div>
+		 <?php echo $this->element('Blocks/home_latest_products'); ?>
+		 <?php echo $this->element('Blocks/home_latest_videos'); ?>
+		 <?php echo $this->element('Blocks/home_latest_events'); ?>
 	</div>
 	<div class="col-md-4">
-			 <h5 class="theme-color-bold">SERVICES OF THE WEEK</h5>
-
-			  <div class="list-group  ">
-			  <a href="#" class="list-group-item  ">
-				<h4 class="list-group-item-heading"></h4>
-				<?php echo $this->Html->image('news.jpg') ?>
-				<p class="list-group-item-text theme-color-bold box-container "> 
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-				</p>
-			  </a>
-
-			   <a href="#" class="list-group-item">
-				<?php echo $this->Html->image('servicesweek.jpg') ?>					
-			  </a>
-		</div>
-
+		<?php echo $this->element('Blocks/home_services_of_week'); ?>		
+		<?php echo $this->element('Banners/home_right_banner'); ?>
 	</div>
 </div>
+<?php echo $this->element('Blocks/sponsors'); ?>

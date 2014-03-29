@@ -3,12 +3,8 @@
 <?php echo $this->element('page_header'); ?>
 <?php echo $this->element('top_banner'); ?>
 <!--start: Wrapper-->
-<div id="wrapper">				
-    <!--start: Container -->
-    <div class="container">     	    
+<div id="wrapper">			    
 	<?php echo $this->fetch('content'); ?>
-    </div>
-    <!--end: Container-->	
 </div>
 <!-- end: Wrapper  -->			
 

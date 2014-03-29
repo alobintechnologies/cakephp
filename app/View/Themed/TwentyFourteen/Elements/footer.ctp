@@ -6,8 +6,12 @@
 	<?php
 	echo $this->Html->script('jquery-1.10.2');
 	echo $this->Html->script('bootstrap');
+	echo $this->Html->script('plugins/datepicker/bootstrap-datepicker');
+	echo $this->Html->script('plugins/skitter/jquery.easing.1.3');
+	echo $this->Html->script('plugins/skitter/jquery.animate-colors-min');
+	echo $this->Html->script('plugins/skitter/jquery.skitter.min');
+
 	?>
-	<?php echo $this->Html->script('plugins/datepicker/bootstrap-datepicker'); ?>
 	<!-- end: Java Script -->
 	
     <script type="text/javascript">
@@ -17,6 +21,9 @@
 	    } else {
 		$(".navbar-fixed-top").removeClass("top-nav-collapse");
 	    }
+	});
+	jQuery(document).ready(function($) {
+	    $(".box_skitter_large").skitter();
 	});
     </script>
     </body>

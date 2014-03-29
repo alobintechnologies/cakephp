@@ -8,6 +8,13 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 	var $displayField = "first_name";
+
+	public function beforeFilter() {
+		if(!$this->Session->check('User')) {
+			$this->layout = "login";
+		}
+		parent::beforeFilter();
+	}
 	
 	/**
 	 * This action is used for logging in authentication handling
@@ -15,14 +22,15 @@ class UsersController extends AppController {
 	 */
 	public function login() {
 		if ($this->Session->check('User')) { // if user logged in redirect to ldashboard
-			$this->redirect(array('controller'=>'pages', 'action'=>'index', 'admin'=>true));	
+			$this->redirect(array('controller'=>'listings', 'action'=>'index', 'admin'=>true));	
 		}
 
 		if (!empty($this->data)) { // if user not logged in and signing now
 			$this->User->set($this->data); // sets the user data for form validation
+			$this->log('user data'.$$this->data);
 			if ($this->User->validates()) { // check the validation
 				$result = $this->User->checkUser($this->data); // return if user exists
-
+			
 				if ($result !== false) {
 					// update the login time
 					$this->User->id = $result['User']['id'];
@@ -30,13 +38,12 @@ class UsersController extends AppController {
 
 					// save user to session
 					$this->Session->write('User', $result);
-					$this->redirect(array('controller'=>'pages', 'action'=>'index', 'admin'=>true));
+					$this->redirect(array('controller'=>'listings', 'action'=>'index', 'admin'=>true));
 				} else {
 					$this->Session->setFlash('Either your username or password is invalid.', 'invalid');
 				}
 			}
 		}
-		$this->layout = "login";
 	} // end  of login function
 
 	/**
@@ -51,7 +58,6 @@ class UsersController extends AppController {
 	}
 
 	public function register() {
-		$this->layout = "login";
 	}
 }
 ?>

@@ -48,7 +48,11 @@ class AppController extends Controller {
 	 */
 	function beforeFilter() {
 		if(isset($this->params['admin']) && $this->params['admin']) {
-			$this->layout = "admin";
-		}
+			if($this->Session->check('User')) {
+				$this->layout = "admin";
+			}else {
+				$this->redirect(array('controller' => 'users', 'action' => 'login', 'admin' => false));
+			}
+		}		
 	}
 }
